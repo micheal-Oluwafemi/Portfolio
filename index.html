@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+ , initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Tailwind Portfolio</title>
+  </head>
+  <body class="font-nunito">
+    <!-- Header Section -->
+    <div
+      class="h-1/3 md:h-screen relative bg-gradient-to-t from-indigo-200 to-white dark:from-slate-800 dark:to-slate-900 overflow-hidden"
+    >
+      <!-- Navbar -->
+      <nav class="w-full fixed top-0 bg-white dark:bg-slate-900 mx-auto z-10">
+        <div
+          class="max-w-6xl flex justify-between items-center mx-auto py-1.5 md:py-3"
+        >
+          <div class="flex items-center gap-1 sm:mx-2 md:mx-0">
+            <img class="w-8" src="img/logo.png" alt="logo" />
+            <h2 class="text-2xl font-medium text-indigo-900 dark:text-gray-200">
+              rayTech
+            </h2>
+          </div>
+          <!-- Links -->
+          <div
+            class="hidden md:flex space-x-10 uppercase font-medium text-sm dark:text-slate-200"
+          >
+            <a class="hover:text-gray-500" href="#">homepage</a>
+            <a class="hover:text-gray-500" href="#about-me">about me</a>
+            <a class="hover:text-gray-500" href="#services">services</a>
+            <a class="hover:text-gray-500" href="#works">works</a>
+            <a class="hover:text-gray-500" href="#contact">contact</a>
+          </div>
+
+          <!-- moon img -->
+          <div id="moon">
+            <img
+              class="md:block w-5 cursor-pointer"
+              src="img/moon.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Hamburger Menu -->
+          <button
+            id="menu-btn"
+            class="block z-20 hamburger md:hidden focus:outline-none mx-4"
+          >
+            <span id="h1" class="hamburger-top bg-black dark:bg-white"></span>
+            <span
+              id="h2"
+              class="hamburger-middle bg-black dark:bg-white"
+            ></span>
+            <span
+              id="h3"
+              class="hamburger-bottom bg-black dark:bg-white"
+            ></span>
+          </button>
+
+          <!-- menu -->
+          <ul
+            id="menu"
+            class="hidden md:hidden bg-indigo-900 absolute top-0 left-0 p-10 w-full rounded-b-3xl space-y-5 text-center text-white"
+          >
+            <li id="hLink">
+              <a class="hover:text-gray-500" href="#">homepage</a>
+            </li>
+            <li id="hLink">
+              <a class="hover:text-gray-500" href="#about-me">about me</a>
+            </li>
+            <li id="hLink">
+              <a class="hover:text-gray-500" href="#services">services</a>
+            </li>
+
+            <li id="hLink">
+              <a class="hover:text-gray-500" href="#works">works</a>
+            </li>
+
+            <li id="hLink">
+              <a class="hover:text-gray-500" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- user's Image -->
+      <img
+        class="md:absolute right-0 bottom-0 h-5/6 mx-auto lg:left-0 object-cover"
+        src="img/man.png"
+        alt=""
+      />
+
+      <!-- bg-Circle -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 right-0 left-0 w-big h-big mx-auto bg-indigo-900 rounded-full -z-10"
+      ></div>
+
+      <!-- animated text -->
+      <div
+        class="absolute top-1/3 left-5 text-xl sm:left-7 sm:text-3xl md:left-28 md:text-5xl lg:left-32 lg:text-5xl xl:left-28 xl:text-7xl font-bold"
+      >
+        <span class="text-gray-500">Freelance</span>
+        <p id="text" class="text-red-500"></p>
+      </div>
+
+      <!-- texts -->
+      <div
+        class="hidden lg:block lg:flex-col absolute top-0 bottom-0 m-auto right-10 h-fit bg-white dark:bg-slate-900 dark:shadow-slate-800 w-1/3 p-6 rounded-md shadow-xl"
+      >
+        <h1 class="text-4xl text-indigo-900 font-medium">Hi, I'm Micheal</h1>
+        <p class="my-3 text-gray-400">
+          with over 10 years of experience on web design and development. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Ut architecto nam
+          quaerat sequi facilis! Dolorum aliquam tenetur adipisci aliquidsed.
+        </p>
+        <a
+          href="#contact"
+          class="bg-indigo-900 text-xl mt-2 text-white p-2 rounded-md text-center m-auto items-center"
+          >Hire me</a
+        >
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about-me" class="py-32 dark:bg-slate-900 w-full mx-auto px-10">
+      <div
+        class="flex relative flex-col-reverse md:flex-row dark:bg-slate-900 max-w-6xl mx-auto"
+      >
+        <!-- Item1 -->
+        <div class="md:w-1/2">
+          <img
+            class="rounded-full w-1/2 mx-auto md:m-0"
+            src="img/portrait.png"
+            alt=""
+          />
+        </div>
+
+        <!-- Item2 -->
+        <div class="md:absolute top-14 left-1/3 flex flex-col pb-9 md:pb-0">
+          <h6 class="text-md uppercase text-indigo-900 font-bold">About me</h6>
+          <h3 class="text-3xl dark:text-white">Better Design</h3>
+          <h3 class="text-3xl dark:text-white">Better Experience</h3>
+          <p class="text-gray-400 my-2">
+            I design and build digital products. I'm also a multi-disciplinary
+            maker with over 10 years of experience in wide of design disciplines
+          </p>
+
+          <p class="text-gray-400">HTML</p>
+          <div class="w-full h-1.5 my-2 bg-gray-200 rounded-md">
+            <div class="w-full bg-indigo-900 h-1.5 rounded-md"></div>
+          </div>
+
+          <p class="text-gray-400">CSS</p>
+          <div class="w-full h-1.5 my-2 bg-gray-200 rounded-md">
+            <div class="w-11/12 bg-indigo-900 h-1.5 rounded-md"></div>
+          </div>
+
+          <p class="text-gray-400">JAVASCRIPT</p>
+          <div class="w-full h-1.5 bg-gray-200 rounded-md">
+            <div class="w-4/5 bg-indigo-900 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section -->
+    <section id="services" class="pt-20 dark:bg-slate-900">
+      <div class="max-w-6xl mx-auto">
+        <h5 class="text-md text-indigo-900 text-center font-bold">SERVICES</h5>
+        <h2 class="text-3xl text-center dark:text-white">What do I offer?</h2>
+        <p class="text-gray-400 text-center text-sm mx-auto w-1/2">
+          My approach to website is to create a website that strengthens your
+          company's brand while ensuring ease of use and simplicity for your
+          audience.
+        </p>
+
+        <div class="flex flex-col md:flex-row mx-auto px-10 py-10">
+          <div
+            class="p-5 bg-white dark:bg-slate-900 dark:shadow-slate-800 shadow-lg rounded-md mx-2 md:w-1/3"
+          >
+            <img class="w-8 rounded-full" src="img/icon.png" alt="" />
+            <h3 class="dark:text-white">UX / UI Design</h3>
+            <p class="text-gray-500">
+              I specialize in creating interactive websites for intrested
+              individuals and small businesses.
+            </p>
+          </div>
+
+          <div
+            class="p-3 bg-white dark:bg-slate-900 dark:shadow-slate-800 md:w-1/3 mx-2 my-5 md:my-0 shadow-lg rounded-md"
+          >
+            <img class="w-8 rounded-full" src="img/icon.png" alt="" />
+            <h3 class="dark:text-white">UX / UI Design</h3>
+            <p class="text-gray-500">
+              I specialize in creating interactive websites for intrested
+              individuals and small businesses.
+            </p>
+          </div>
+
+          <div
+            class="p-3 bg-white dark:bg-slate-900 dark:shadow-slate-800 md:w-1/3 shadow-lg rounded-md mx-2"
+          >
+            <img class="w-8 rounded-full" src="img/icon.png" alt="" />
+            <h3 class="dark:text-white">UX / UI Design</h3>
+            <p class="text-gray-500">
+              I specialize in creating interactive websites for intrested
+              individuals and small businesses.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row mx-auto px-10">
+          <div
+            class="p-5 bg-white dark:bg-slate-900 dark:shadow-slate-800 shadow-lg rounded-md mx-2 md:w-1/3"
+          >
+            <img class="w-8 rounded-full" src="img/icon.png" alt="" />
+            <h3 class="dark:text-white">UX / UI Design</h3>
+            <p class="text-gray-500">
+              I specialize in creating interactive websites for intrested
+              individuals and small businesses.
+            </p>
+          </div>
+
+          <div
+            class="p-3 bg-white dark:bg-slate-900 dark:shadow-slate-800 md:w-1/3 mx-2 my-5 md:my-0 shadow-lg rounded-md"
+          >
+            <img class="w-8 rounded-full" src="img/icon.png" alt="" />
+            <h3 class="dark:text-white">UX / UI Design</h3>
+            <p class="text-gray-500">
+              I specialize in creating interactive websites for intrested
+              individuals and small businesses.
+            </p>
+          </div>
+
+          <div
+            class="p-3 bg-white dark:bg-slate-900 dark:shadow-slate-800 md:w-1/3 shadow-lg rounded-md mx-2"
+          >
+            <img class="w-8 rounded-full" src="img/icon.png" alt="" />
+            <h3 class="dark:text-white">UX / UI Design</h3>
+            <p class="text-gray-500">
+              I specialize in creating interactive websites for intrested
+              individuals and small businesses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="works" class="pt-10 dark:bg-slate-900">
+      <div class="max-w-6xl mx-auto pt-20">
+        <h5 class="text-md text-indigo-900 text-center font-bold">PORTFOLIO</h5>
+        <h2 class="text-3xl text-center dark:text-white">Works & Projects</h2>
+        <p class="text-gray-400 text-center text-sm mx-auto w-4/5 mt-1">
+          I help designers, small agencies and businesses bring their ideas to
+          Life. Powered by Figma, VS Code and coffee. I turn your requirements
+          into a well designed websites.
+        </p>
+
+        <div
+          class="flex flex-col md:flex-row mx-auto justify-center items-center px-10 py-5"
+        >
+          <div class="mx-auto md:w-1/2 h-1/3">
+            <img
+              class="w-1/2 h-2/3 rounded-md mx-auto"
+              src="img/portfolio-2.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="p-3 md:w-1/2 mx-2 my-5 rounded-md">
+            <img
+              class="w-1/2 mx-auto rounded-sm"
+              src="img/portfolio-7.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="p-3 rounded-md mx-2">
+            <img
+              class="w-1/2 mx-auto rounded-md"
+              src="img/portfolio-4.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row mx-auto px-10">
+          <div class="rounded-md mx-2 md:w-1/3">
+            <img
+              class="w-1/2 mx-auto rounded-lg"
+              src="img/portfolio-8.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="p-3 md:w-1/3 mx-2 my-5 rounded-md">
+            <img
+              class="w-1/2 mx-auto rounded-md"
+              src="img/portfolio-9.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="p-3 rounded-md mx-2 md:w-1/4">
+            <img
+              class="w-1/2 mx-auto rounded-sm"
+              src="img/portfolio-6.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="dark:bg-slate-900">
+      <div class="max-w-6xl mx-auto pt-20">
+        <h5 class="text-md text-indigo-900 text-center font-bold">CONTACTS</h5>
+        <h2 class="text-3xl text-center dark:text-white">Have Question ?</h2>
+        <p class="text-gray-400 text-center text-sm mx-auto w-1/2 mt-1">
+          Do you have any idea? Let's discuss it and see what we can do together
+        </p>
+
+        <form class="mt-5 p-8 flex flex-col items-center gap-5">
+          <input
+            type="text"
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            placeholder="Name Surname"
+          />
+
+          <input
+            type="email"
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            placeholder="Email"
+          />
+          <textarea
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            cols="30"
+            rows="10"
+            placeholder="Message..."
+          ></textarea>
+
+          <button
+            class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="w-full bg-gray-800">
+      <div class="max-w-6xl flex justify-between items-center mx-auto py-3">
+        <div class="flex items-center gap-1 sm:mx-2 md:mx-0">
+          <img class="w-8" src="img/logo.png" alt="logo" />
+          <h2 class="text-2xl font-medium text-white">rayTech</h2>
+        </div>
+        <!-- Links -->
+        <span class="hidden md:block text-slate-500"
+          >&copy; 2022 Zindeyza. Designed by ❤ rayTech.</span
+        >
+
+        <!-- menu -->
+        <div class="flex gap-2 mr-2">
+          <img class="w-4 cursor-pointer" src="img/facebook.png" alt="" />
+          <img class="w-4 cursor-pointer" src="img/instagram.png" alt="" />
+          <img class="w-4 cursor-pointer" src="img/linkedin.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Js file -->
+    <script src="app.js"></script>
+    <script src="autotyping.js"></script>
+  </body>
+</html>
